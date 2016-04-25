@@ -1,0 +1,75 @@
+<section class=" container">
+
+  <!-- top part -->
+  <div class="row">
+   <div class="col-md-12 topsection">
+     <h1>Celebrities profile</h1>
+   </div> 
+ </div>
+ 
+ <!-- dropdown part -->
+ <div class="row">
+  <div class="col-md-3 col-sm-4 col-xs-12 listpart" >
+    <h4 id="category" >List of Categorys</h4>
+    <div id="dropdownpart">         
+      <select id="select" name ="time" ng-model="query"  ng-options="celebritie.category as celebritie.category for celebritie in celebrities | unique:'category'">         
+        <option value="">All</option>  
+      </select>  
+    </div>
+  </div>
+
+  <!--display part -->
+  <div class="col-md-9 col-sm-8 col-xs-12 imgpart">
+   <div class="row">
+     <h2 class="topicHeading">Celebrities page</h2>
+     <div class="col-md-12">
+       <div class="artilist">
+        <div   ng-repeat="item in celebs  | filter: query" class="celeb cf celebritie-listing">
+
+          <a id="alist" title="Click to see profile" href="#/details/{{celebs.indexOf(item)}}">
+            <img class="listimg" ng-src="./img/{{item.name}}.jpg" alt="Photo of {{item.name}}">
+            <div class="clistinfo">
+              <h3>{{item.name}}</h3>
+              <h4>{{item.category}}</h4>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

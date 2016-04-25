@@ -1,0 +1,48 @@
+<section class=" container">
+
+  <!-- top part -->
+       <div class="row">
+           <div class="col-md-12 topsection">
+               <h1>Celebrities profile</h1>
+           </div> 
+       </div>
+  
+    <div class="row">
+      <div class="col-md-12 detailpart">   
+   <div class="celebinfo ">
+    <div class="cf" ng-model="celebs">
+     <a id="back" title="Back to interns list" href="index.html">&laquo; Back to list</a>
+     <h3 id="det">Most Influential Indians On Social Media</h3>
+    <h1 id="name">{{celebs[whichItem].name}}</h1>
+    <div class="info detailinfo">
+      <img class="img-thumbnail detailimg" ng-src="./img/{{celebs[whichItem].name}}.jpg" alt="Photo of {{celebs[whichItem].name}}">
+
+      <div class="bio">
+     <ui id="celebUi"> 
+         <li class="celebLi">
+          <b>Born:</b>
+          {{celebs[whichItem].born}}
+        </li>
+       <li class="celebLi">
+         {{celebs[whichItem].detail}}
+        </li>
+        <li class="celebLi">
+        <b> Facebook:</b>
+         {{celebs[whichItem].Facebook}}
+        </li>
+        <li class="celebLi">
+        <b> Twitter:</b>
+          {{celebs[whichItem].Twitter}}
+        </li>
+      <li class="celebLi">
+          <b>Total:</b>
+          {{celebs[whichItem].Total}} 
+        </li>
+   </ui>
+    </div>
+    
+  </div>
+  </div>
+ </div>  <!-- col-12 end-->
+    </div><!-- row end -->
+</section>

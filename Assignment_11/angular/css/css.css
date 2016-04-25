@@ -1,0 +1,391 @@
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300italic,400italic,500italic,500,700,700italic);
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic);
+
+  html {
+   min-height: 100%;
+   height: auto;
+  }
+  body{
+    background-color: rgba(25, 117, 102,0.8);
+    font-family: 'Roboto', sans-serif;
+  }
+  .cf:before,
+  .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  .cf:after {
+    clear: both;
+  }
+
+  .topsection{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(25, 117, 102);
+    box-shadow:inset 0px 0px 5px 1px rgba(213, 246, 241,0.8);
+    color: #eff;
+    border-radius: 10px;
+    padding-left: 40px;
+  }
+
+  /* list.html*/
+
+  .listpart{
+    background-image: url("../img/Background8.jpg");
+    background-size: cover;
+    box-shadow:inset 0px 0px 10px 3px rgba(204, 255, 255,0.6),
+    inset 0px 0px 10px 6px rgba(0,0,0,0.9); 
+    border-radius: 5px;
+    height: 560px;
+  }
+
+  .imgpart{
+    background-image: url("../img/Background1.jpg");
+    background-size: cover;
+    box-shadow:inset 0px 0px 10px 3px rgba(255, 255, 204,0.6),
+    inset 0px 0px 10px 8px rgba(0,0,0,0.8);  
+    border-radius: 5px;                
+    min-height: 560px;
+  }
+
+  .celeb{
+    margin: 10px;
+    width: 90%;
+    background-image: url("../img/images2.jpg");
+    background-size: cover;
+    background-color: #eee;
+    padding: 8px;
+    padding-left: 15px;
+    border-radius: 5px;
+    box-shadow:inset 0px 0px 5px 4px rgba(0, 0, 0, .5),  
+    1px 2px 4px  rgba(0, 0, 0, .8);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear; 
+  }
+
+  .celeb:hover{
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+
+  .listimg{
+    width: 95px;
+    height: 80px;
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #111;
+    border-radius: 5px;
+    box-shadow:0px 2px 3px 1px rgba(0, 0, 0, .9);
+  }
+
+  .clistinfo{
+    margin: 10px;
+  }
+
+  #alist .clistinfo {
+    color: rgba(0, 0, 0, .8);
+  }
+
+  #.dropdownpart{
+    margin-top: 12px; 
+  }
+
+  #category{
+    color: rgba(255,255,255,0.8);
+    margin-top: 40px;
+    margin-left: 9px;
+  }
+
+  #select{
+    width: 85%;
+    height: 37px;
+    margin-left: 10px;
+    outline: none;
+    border-radius: 5px;
+    font-size: 19px;
+    padding: 7px;
+    background-color: rgba(32, 147, 129 ,0.5);
+    box-shadow:inset 0px 0px 5px 4px rgba(255, 255, 255, .5),  
+    1px 2px 4px 2px rgba(0, 0, 0, .5); 
+  }
+
+  .topicHeading{
+   rgba(0, 0, 0, .9);
+   padding-left: 20px;
+  }
+
+  /* detail.html*/
+  .detailpart{:;
+    width: 100%;
+    min-height: 563px;
+    background-image: url("../img/Background.jpeg");
+    background-size: cover;
+    border-radius: 10px;
+    padding-top: 20px;
+    background-color: #444;
+  }
+
+  .celebinfo {
+   width: 70%;
+   margin: 0 auto;
+   padding: 5px;  
+  }
+
+  a#back{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  h1#name{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  .detailimg{
+    float: left;
+    width: 260px;
+    height: 240px;
+    margin: 12px;
+    margin-right: 20px;
+    box-shadow:0px 2px 4px 2px rgba(0, 0, 0, .8);
+  }
+
+  .bio{
+    margin: 15px;
+  }
+
+  .bio #celebUi .celebLi{
+    font-size: 20px;
+    list-style: none;
+    margin: 8px ;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  #celebUi{
+    margin: 2px;
+  }
+
+  /* responsive design*/
+
+  @media (min-width: 320px) and (max-width: 599px) {
+   h1{
+     font-size: 30px;
+   }
+   h2{
+    font-size: 25px;
+  }
+  h3{
+    margin-top: 10px;
+    font-size: 19px;
+  }
+  h4{
+    font-size: 16px;
+  }
+  .topsection{
+    margin-top: 0;
+    padding-top: 1px;
+    height: 70px;
+    font-size: 25px;
+  }
+  .listpart{
+    height: 115px;
+    padding-top: 10px;
+  }
+  #category{
+    margin-top: 8px;
+    margin-left: 5px;
+    color: rgb(0, 51, 102);
+  }
+  #dropdownpart{
+    margin-top: 0;
+  }
+  #select{
+   font-size: 17px;
+   height: 33px;
+   width: 260px;
+   margin-left: 10px;
+   margin-top: 1px;
+  }
+  .listimg{
+    width: 80px;
+    height:75px;
+  }
+  .clistinfo{
+    margin: 4px;
+  }
+  a#back{
+    font-size: 18px;
+  }
+  #det{
+    font-size: 17px;
+  }
+  h1#name{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .celebinfo{
+    width: 90%;
+  }
+  .detailimg{
+    width: 205px;
+    height: 180px;
+    padding:0;
+    margin-right:15px;
+  }
+  .bio #celebUi .celebLi{
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  }
+
+  @media (min-width: 600px) and (max-width: 767px){
+
+    .topsection{
+      margin-top: 0;
+      padding-top: 1px;
+      height: 70px;
+      font-size: 25px;
+    }
+    .listpart{
+      height: 120px;
+      padding-top: 10px;
+    }
+    #category{
+      margin-top: 10px;
+      margin-left: 5px;
+      color: rgb(0, 51, 102);
+    }
+    #dropdownpart{
+      margin-top: 1px;
+    }
+    #select{
+     font-size: 17px;
+     height: 35px;
+     width: 260px;
+     margin-left: 20px;
+     margin-top: 1px;
+   }
+
+   .clistinfo{
+    margin: 4px;
+  }
+  a#back{
+    font-size: 20px;
+  }
+  #det{
+    font-size: 18px;
+  }
+  h1#name{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .celebinfo{
+    width: 90%;
+  }
+  .detailimg{
+    width: 230px;
+    height: 210px;
+    padding:0;
+  }
+  .bio #celebUi .celebLi{
+    font-size: 17px;
+    margin-right: 10px;
+  }
+
+  }
+
+  @media (min-width: 768px) and (max-width: 991px){
+
+    .topsection{
+      margin-top: 0;
+      padding-top: 1px;
+      height: 75px; 
+    }
+    #select{
+     font-size: 17px;
+     height: 35px;
+     width: 200px;
+     margin-left: 10px;
+
+   }
+   a#back{
+    font-size: 20px;
+  }
+  #det{
+    font-size: 18px;
+  }
+  h1#name{
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .celebinfo{
+    width: 90%;
+  }
+  .detailimg{
+    width: 230px;
+    height: 210px;
+    padding:0;
+  }
+  .bio #celebUi .celebLi{
+    font-size: 17px;
+    margin-right: 10px;
+  }
+
+  }
+
+  @media (max-width: 1122px) and (min-width: 992px){
+  #select{
+     font-size: 18px;
+     height: 36px;
+     width: 200px;
+     margin-left: 5px;
+   }
+   #category{
+    margin-left: 10px;
+   }
+
+  }
+
+
+  /* angular animation*/
+
+  .celebritie-listing.ng-enter,
+  .celebritie-listing.ng-leave,
+  .celebritie-listing.ng-move {
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+  }
+
+  .celebritie-listing.ng-enter,
+  .celebritie-listing.ng-move {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .celebritie-listing.ng-move.ng-move-active,
+  .celebritie-listing.ng-enter.ng-enter-active {
+    opacity: 1;
+    height: 120px;
+  }
+
+  .celebritie-listing.ng-leave {
+    opacity: 1;
+    overflow: hidden;
+  }
+
+  .celebritie-listing.ng-leave.ng-leave-active {
+    opacity: 0;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
